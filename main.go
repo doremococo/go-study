@@ -36,7 +36,7 @@ func handleTodo(w http.ResponseWriter, r *http.Request) {
 }
 
 func main() {
-	todoList = append(todoList, "顔を洗う", "朝食を食べる", "歯を磨く")
+	todoList = append(todoList, "顔を洗う", "朝食を食べる", "歯を磨く", "風呂に入る", "勉強する")
 
 	http.Handle("/static/",
 		http.StripPrefix("/static/", http.FileServer(http.Dir("static"))))
